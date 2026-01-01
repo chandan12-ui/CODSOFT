@@ -1,0 +1,523 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Reset & Font Setup */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body Background & Text Color */
+body{
+   background-color: #081b29;
+   color: #ededed;
+}
+
+/* ================= NAVBAR ================= */
+
+/* Navigation Bar Container */
+.navigation{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 3.5rem;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    z-index: 100;
+}
+
+/* Logo Text */
+.logo{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ededed;
+}
+
+/* Navbar List Layout */
+.navbar ul{
+    display: flex;
+}
+
+/* Remove List Styling */
+.navbar ul li{
+    list-style: none;
+}
+
+/* Navbar Links */
+.navbar ul li a{
+    text-decoration: none;
+    color: #ededed;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 2.3rem;
+    transition: .3s;
+}
+
+/* Navbar Hover & Active State */
+.navbar ul li a:hover,
+.navbar .active{
+    color: #00abf0;
+}
+
+/* ================= HOME SECTION ================= */
+
+/* Home Section Layout */
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+/* Home Content Width */
+.home-content{
+    width: 37.5rem;
+}
+
+/* Main Heading */
+.home-content h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Sub Heading */
+.home-content h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+/* Description Text */
+.home-content p{
+    font-size: 1rem;
+    margin: 1.2rem 0 2.6rem;
+}
+
+/* Button Container */
+.btn-box{
+    width: 21.2rem;
+    height: 3.2rem ;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Home Layout with Image */
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  gap: 3rem;
+}
+
+/* ================= HOME IMAGE ================= */
+
+/* Image Wrapper */
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Profile Image Styling */
+.home-image img {
+  width: 320px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #00abf0;
+  box-shadow: 0 0 40px rgba(0, 171, 240, 0.6);
+}
+
+/* ================= BUTTON STYLES ================= */
+
+/* Button Base Style */
+.btn-box a{
+    position: relative;
+    width: 9.3rem;
+    height: 100%;
+    background-color: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    color:#081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* Button Hover Text Color */
+.btn-box a:hover{
+    color: #00abf0;
+}
+
+/* Second Button Transparent Style */
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+
+/* Second Button Hover Text */
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+
+/* Second Button Hover Background */
+.btn-box a:nth-child(2)::before{
+    background-color: #00abf0;
+}
+
+/* Button Hover Overlay */
+.btn-box a::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    height: 100%;
+    width: 0;
+    background-color: #081b29;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+/* Expand Hover Effect */
+.btn-box a:hover::before{
+     width: 100%;
+     color: #00abf0;
+}
+
+/* ================= SKILLS SECTION ================= */
+
+#skill-section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+/* Skills Heading */
+#skill-section h2 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin-bottom: 3rem;
+}
+
+/* Skills Grid */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Skill Card */
+.skill-items {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+/* Skill Hover Effect */
+.skill-items:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(0, 171, 240, 0.6);
+}
+
+/* Skill Icon */
+.skill-items img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px rgba(0, 171, 240, 0.6));
+}
+
+/* Skill Name */
+.skill-items p {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ================= SOCIAL ICONS ================= */
+
+.home-icon{
+    position: absolute;
+    bottom: 10rem;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Social Icon Style */
+.home-icon a{
+    position: relative;
+    display: inline-flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* Social Icon Hover */
+.home-icon a:hover{
+    color: #081b29;
+}
+
+/* Social Icon Hover Overlay */
+.home-icon a::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+/* Expand Overlay */
+.home-icon a:hover::before{
+      width: 100%;
+}
+
+/* ================= PROJECTS SECTION ================= */
+
+#projects-section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+/* Projects Heading */
+#projects-section h2 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin-bottom: 3rem;
+}
+
+/* Projects Grid */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Project Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Project Hover */
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: #00abf0;
+  box-shadow: 0 0 40px rgba(0, 171, 240, 0.6);
+}
+
+/* Project Title */
+.project-card h3 {
+  color: #00abf0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Project Description */
+.project-card p {
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* ================= RESUME SECTION ================= */
+
+#resume-section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+/* Resume Heading */
+#resume-section h2 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+/* Resume Box */
+.resume-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+/* Resume Text */
+.resume-content p {
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Resume Download Button */
+.resume-content a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #00abf0, #007bbd);
+  color: white;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Resume Hover Effect */
+.resume-content a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(0, 171, 240, 0.6);
+}
+
+/* ================= CONTACT SECTION ================= */
+
+#contact-section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+/* Contact Heading */
+#contact-section h2 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin-bottom: 3rem;
+}
+
+/* Contact Grid */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Contact Card */
+.contact-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+/* Contact Hover */
+.contact-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(0, 171, 240, 0.6);
+}
+
+/* Contact Title */
+.contact-item h3 {
+  color: #00abf0;
+  margin-bottom: 1rem;
+}
+
+/* Contact Text & Links */
+.contact-item p,
+.contact-item a {
+  color: #fff;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+/* Contact Link Hover */
+.contact-item a:hover {
+  color: #00abf0;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Footer Text */
+footer p {
+  opacity: 0.7;
+  margin: 0.5rem 0;
+}
+
+/* ================= EXTRA BUTTONS ================= */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+/* Button Style */
+.buttons a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(90deg, #352aff, #ff2a72);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.buttons a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(0, 171, 240, 0.6);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 6rem;
+  }
+
+  .content h1 {
+    font-size: 2.2rem;
+  }
+
+  .my-img img {
+    width: 15rem;
+    height: 20rem;
+  }
+
+  .nav-2 nav ul {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+}
